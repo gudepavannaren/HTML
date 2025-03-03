@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Python DSA Interview Questions</title>
+
+</head>
+<style>
+	p{
+		font-size: 20px;
+	}
+</style>
+<body style="background-color: #f6f6f6;">
+<h1 style="background-color:#f6f6e3;font-style: oblique; margin:20px;border-radius:20px;padding-left:500px;color: #b64926;"><b>Python DSA Interview Questions</b></h1>
+        <details>
+		<summary style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: large;font-variant: initial;">1. What is the difference between list and tuple in Python?</summary>
+		<p style="font-style:italic; color:#7e6752;padding-left:20px;padding-right: 20px;">In Python, lists and tuples are both data structures that can store multiple values. However, the main difference between them is that lists are mutable, meaning they can be modified after creation, whereas tuples are immutable, meaning they cannot be modified after creation.</p>
+	</details>
+	<br>
+	<details>
+		<summary style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: large;font-variant: initial;">2. How do you implement a stack using a list in Python?</summary>
+		<p style="font-style:italic;color:#7e6752;padding-left:20px;padding-right:20px;">You can implement a stack using a list in Python by using the append() method to add elements to the top of the stack and the pop() method to remove elements from the top of the stack.</p>
+		<pre style="font-style:italic;color:#7e6752;padding-left:20px;padding-right:20px;">
+stack = []
+stack.append(1)
+stack.append(2)
+print(stack.pop())  # Output: 2
+		</pre>
+	</details>
+	<br>
+	<details>
+		<summary style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: large;font-variant: initial;">3. What is the time complexity of the binary search algorithm?</summary>
+		<p style="font-style:italic;color:#7e6752;padding-left:20px;padding-right:20px;">The time complexity of the binary search algorithm is O(log n), where n is the number of elements in the search space. This is because binary search divides the search space in half with each iteration, reducing the number of comparisons needed to find the target element.</p>
+	</details>
+	<br>
+	<details>
+		<summary style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: large;font-variant: initial;">4. How do you handle missing values in a pandas DataFrame?</summary>
+		<p style="font-style:italic;color:#7e6752;padding-left:20px;padding-right:20px;">You can handle missing values in a pandas DataFrame using the isnull() method to detect missing values, the dropna() method to remove rows or columns with missing values, and the fillna() method to replace missing values with a specific value or using a specific strategy.</p>
+		<pre style="font-style:italic;color:#7e6752;padding-left:20px;padding-right:20px;">
+import pandas as pd
+
+df = pd.DataFrame({'A': [1, 2, None, 4]})
+print(df.isnull())  # Output: True for the third row
+df.dropna()  # Remove rows with missing values
+df.fillna(0)  # Replace missing values with 0
+		</pre>
+	</details>
+	<br>
+	<details>
+		<summary style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: large;font-variant: initial;">5. What is the difference between the 'is' and '==' operators in Python?</summary>
+		<p style="font-style:italic;color:#7e6752;padding-left:20px;padding-right:20px;">In Python, the 'is' operator checks if two variables refer to the same object in memory, whereas the '==' operator checks if the values of two variables are equal.</p>
+		<pre style="font-style:italic;color:#7e6752;padding-left:20px;padding-right:20px;">
+a = [1, 2, 3]
+b = [1, 2, 3]
+print(a == b)  # Output: True
+print(a is b)  # Output: False
+		</pre>
+	</details>
+</body>
+</html>
